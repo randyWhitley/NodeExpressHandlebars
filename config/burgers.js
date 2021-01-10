@@ -12,16 +12,16 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
-// Helper function to convert object key/value pairs to SQL syntax
+// converts value pairs to SQL syntax
 function objToSql(ob) {
   let arr = [];
 
-  // loop through the keys and push the key/value as a string int arr
+  // loop 
   for (let key in ob) {
     let value = ob[key];
-    // check to skip hidden properties
+    // 
     if (Object.hasOwnProperty.call(ob, key)) {
-      // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // 
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
@@ -29,11 +29,11 @@ function objToSql(ob) {
     }
   }
 
-  // translate array of strings to a single comma-separated string
+  // 
   return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+//
 let orm = {
   all: function(tableInput, cb) {
     let queryString = "SELECT * FROM " + tableInput + ";";
@@ -64,7 +64,7 @@ let orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // 
   update: function(table, objColVals, condition, cb) {
     let queryString = "UPDATE " + table;
 
@@ -84,5 +84,5 @@ let orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+// 
 module.exports = orm;
