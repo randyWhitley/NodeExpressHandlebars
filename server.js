@@ -1,4 +1,3 @@
-let path = require('path');
 let express = require('express');
 let app = express();
 // port
