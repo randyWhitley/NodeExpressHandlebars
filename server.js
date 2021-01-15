@@ -2,7 +2,7 @@ let path = require('path');
 let express = require('express');
 let app = express();
 // port
-let PORT = process.env.PORT || 3306;
+let PORT = process.env.PORT || 3308;
 
 // 
 app.use(express.static("public")); 
