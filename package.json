@@ -1,0 +1,30 @@
+{
+  "name": "nodeexpresshandlebars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engine": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyWhitley/NodeExpressHandlebars.git"
+  },
+  "author": "Randy <randywhitley84@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/randyWhitley/NodeExpressHandlebars/issues"
+  },
+  "homepage": "https://github.com/randyWhitley/NodeExpressHandlebars#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}

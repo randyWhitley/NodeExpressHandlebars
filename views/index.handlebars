@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row" id="row1">
+    <div class="col-md-12">
+      <h1 class="GatorBurger">Tats a gud Gator Burger!</h1>
+      <img class="logo" src="img_gator-sandwich.jpg">
+      <img class="hungary Gator" src="img_hamburgers.png" />
+    </div>
+  </div>
+
+  <div class="row" id="row2">
+    <div class="col-md-8">
+      <h2 class="title"> Alabama Swamp Burgers: "Eat tat Gator Boi"!</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{burger_name}}
+        {{> burgers/burger-block}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h2 class="hungary?">hungary?</h2>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>
+          {{id}}
+          {{burger_name}}
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="row" id="row3">
+    <div class="col-md-12">
+      <div class="orderBurger">
+        <h2 class="title">In-N-Out is For City people, Gator is for salt of the earf Americans </h2>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="newSwamp"> 100% Gator Burger:</label>
+            <input type="text" id="newSwamp" name="burger">
+          </div>
+          <button type="submit" id="orderBtn">Order tat Gator Boi!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

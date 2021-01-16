@@ -1,0 +1,36 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    background-color: green;
+}
+
+.mainTitle, .title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.prevTitle {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#row1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#row2 {
+    margin-bottom: 20px;
+}
+
+.orderBurger {
+    text-align: center;
+}
+
+.logo, .GatorBurger{
+    display: inline-flex;
+    align-items: center;
+    width: 300px;
+}
