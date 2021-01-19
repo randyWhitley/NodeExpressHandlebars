@@ -10,7 +10,7 @@ $(function () {
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: devouredState,
+      data: true,
     }).then(function () {
       console.log("changed devoured to", eaten);
       // Reload the page to get the updated list
@@ -29,9 +29,9 @@ $(function () {
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newSwamp,
+      data: newBurger,
     }).then(function () {
-      console.log("created new burger - " + newSwamp);
+      console.log("created new burger - " + newBurger);
       // Reload 
       location.reload();
     });
